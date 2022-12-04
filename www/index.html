@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <style>
+        h1, #loginText {
+            text-align: center;
+        }
+        form {
+            margin: auto;
+            width: 300px;
+            display: grid;
+            grid-template-columns: 1fr 4fr;
+        }
+        form * {
+            padding: 3px;
+            margin: 3px;
+            ;
+        }
+    </style>
+</head>
+<body>
+    <h1>Login Page</h1>
+    <div id="loginText">Use <b>user1</b> for username and <b>password1</b> for password to login </div>
+    <form action="/login" method="POST">
+        <label for="username">Username</label>
+        <input type="text" name="username" />
+        <label for="passsword">Password</label>
+        <input type="password" name="password" id="" />
+        <button type="reset">Reset</button>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
