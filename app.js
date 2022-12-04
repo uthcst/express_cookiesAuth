@@ -12,7 +12,7 @@ app.post('/login', (req, res) => {
     const username = req.body.username;
     const password = users[username];
     //check if the passwords are equal
-    if (password === req.body.password) {
+    if (password && password === req.body.password) {
         res.cookie('username', username);
         res.redirect("/admin");
     }
